@@ -10,25 +10,25 @@
     // Pour facilité le travail (et parce qu'on veut toujours afficher la même information), tous les entrées des sous-tableaux ont les mêmes clés
     $mesProduits = [
         [
-            PRODUCT_NAME  => 'Bonnet en laine', // Ici, on utilise notre constante comme clé pour le nom du produit (ça n'est pas obligatoire du tout, c'est surtout là pour vous montrer que c'est possible ;) ) 
+            PRODUCT_NAME  => 'Bonnet en laine', // Ici, on utilise notre constante comme clé pour le nom du produit (ça n'est pas obligatoire du tout, c'est surtout là pour vous montrer que c'est possible ;) )
             'price'       => 10, // On évite d'indiquer la monnaie utilisée (€), afin de permettre de faire des calculs sur la valeur
             'description' => $description, // On appelle directement notre variable, plutôt que de copier-coller un texte
-            'image'       => 'laine.webp',
+            'image'       => 'laine.webp', // Ici, je ne mets que le nom de l'image, pas son chemin. Si ce chemin venait à changer, je n'aurais ainsi pas à le modifier dans mes données, mais seulement là où elles sont appelées.
         ],
         [
-            PRODUCT_NAME  => 'Bonnet en laine bio', 
+            PRODUCT_NAME  => 'Bonnet en laine bio',
             'price'       => 14,
             'description' => $description,
             'image'       => 'ours.jpg',
         ],
         [
-            PRODUCT_NAME  => 'Bonnet en laine et cachemire', 
+            PRODUCT_NAME  => 'Bonnet en laine et cachemire',
             'price'       => 20,
             'description' => $description,
             'image'       => 'angora.jpg',
         ],
         [
-            PRODUCT_NAME  => 'Bonnet arc-en-ciel', 
+            PRODUCT_NAME  => 'Bonnet arc-en-ciel',
             'price'       => 12,
             'description' => $description,
             'image'       => 'casquette.jpg',
