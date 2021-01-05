@@ -13,21 +13,25 @@
             PRODUCT_NAME  => 'Bonnet en laine', // Ici, on utilise notre constante comme clé pour le nom du produit (ça n'est pas obligatoire du tout, c'est surtout là pour vous montrer que c'est possible ;) ) 
             'price'       => 10, // On évite d'indiquer la monnaie utilisée (€), afin de permettre de faire des calculs sur la valeur
             'description' => $description, // On appelle directement notre variable, plutôt que de copier-coller un texte
+            'image'       => 'laine.webp',
         ],
         [
             PRODUCT_NAME  => 'Bonnet en laine bio', 
             'price'       => 14,
             'description' => $description,
+            'image'       => 'ours.jpg',
         ],
         [
             PRODUCT_NAME  => 'Bonnet en laine et cachemire', 
             'price'       => 20,
             'description' => $description,
+            'image'       => 'angora.jpg',
         ],
         [
             PRODUCT_NAME  => 'Bonnet arc-en-ciel', 
             'price'       => 12,
             'description' => $description,
+            'image'       => 'casquette.jpg',
         ],
     ];
     // Noter que ce fichier ne termine pas par ? > Ce n'est pas nécessaire lorsque le fichier se termine par du php.
