@@ -10,24 +10,44 @@
     // Pour facilité le travail (et parce qu'on veut toujours afficher la même information), tous les entrées des sous-tableaux ont les mêmes clés
     $mesProduits = [
         [
+<<<<<<< Updated upstream:vars.php
             PRODUCT_NAME  => 'Bonnet en laine', // Ici, on utilise notre constante comme clé pour le nom du produit (ça n'est pas obligatoire du tout, c'est surtout là pour vous montrer que c'est possible ;) ) 
+=======
+            PRODUCT_NAME  => 'Bonnet en laine', // Ici, on utilise notre constante comme clé pour le nom du produit (ça n'est pas obligatoire du tout, c'est surtout là pour vous montrer que c'est possible ;) )
+>>>>>>> Stashed changes:includes/vars.php
             'price'       => 10, // On évite d'indiquer la monnaie utilisée (€), afin de permettre de faire des calculs sur la valeur
             'description' => $description, // On appelle directement notre variable, plutôt que de copier-coller un texte
+            'image'       => 'laine.webp', // Ici, je ne mets que le nom de l'image, pas son chemin. Si ce chemin venait à changer, je n'aurais ainsi pas à le modifier dans mes données, mais seulement là où elles sont appelées.
         ],
         [
+<<<<<<< Updated upstream:vars.php
             PRODUCT_NAME  => 'Bonnet en laine bio', 
+=======
+            PRODUCT_NAME  => 'Bonnet en laine bio',
+>>>>>>> Stashed changes:includes/vars.php
             'price'       => 14,
             'description' => $description,
+            'image'       => 'ours.jpg',
         ],
         [
+<<<<<<< Updated upstream:vars.php
             PRODUCT_NAME  => 'Bonnet en laine et cachemire', 
+=======
+            PRODUCT_NAME  => 'Bonnet en laine et cachemire',
+>>>>>>> Stashed changes:includes/vars.php
             'price'       => 20,
             'description' => $description,
+            'image'       => 'angora.jpg',
         ],
         [
+<<<<<<< Updated upstream:vars.php
             PRODUCT_NAME  => 'Bonnet arc-en-ciel', 
+=======
+            PRODUCT_NAME  => 'Bonnet arc-en-ciel',
+>>>>>>> Stashed changes:includes/vars.php
             'price'       => 12,
             'description' => $description,
+            'image'       => 'casquette.jpg',
         ],
     ];
     // Noter que ce fichier ne termine pas par ? > Ce n'est pas nécessaire lorsque le fichier se termine par du php.

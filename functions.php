@@ -2,10 +2,10 @@
 /**
  * Pour calculer un prix HT à partir du prix TTC, le calcul est :
  * $prix / (1 + (20/100)) si la TVA est de 20%. On peut le simplifier en $prix / 1.2
- * 
+ *
  * // Les deux commentaires ci-dessous sont standards. Ils indiquent les types des paramètres attendus par la fonction et son type de retour. Ils ne sont pas obligatoires, mais peuvent aider à la relecture du code
  * @var float $prix
- * 
+ *
  * @return float
  */
 function prixHT($prix) {
@@ -16,9 +16,9 @@ function prixHT($prix) {
 /**
  * Ici, on fait un affichage purement en PHP.
  * On affiche une ligne du tableau HTML, à partir d'une ligne du tableau PHP principal.
- * 
+ *
  * @var array $produit
- * 
+ *
  * @return void Ce void indique qu'il s'agit d'une procédure, et non d'une fonction. void indique qu'elle ne retourne rien, même pas null !
  */
 function afficheProduit($produit) {
@@ -28,7 +28,7 @@ function afficheProduit($produit) {
     } else {
         $color = "blue";
     }
-    // Ici, le but est d'écrire une grande chaîne de caractère en php avec echo. 
+    // Ici, le but est d'écrire une grande chaîne de caractère en php avec echo.
     // On peut également écrire plusieurs chaînes plus courtes, les unes après les autres, pour éviter de concaténer à tout va.
     echo '
     <tr>
@@ -45,4 +45,21 @@ function afficheProduit($produit) {
             '.$produit['description'].'
         </td>
     </tr>';
+}
+
+/**
+ * Comme précédemment, nous affichons un produit, mais cette fois en utilisant
+ * les cards de Bootstrap
+ * @param $produit
+ *
+ * @return void
+ */
+function cardProduit($produit) {
+    echo '<div class="card col-md-4 col-sm-12">
+        <img src="images/'.$produit['image'].'" class="card-img-top" style="max-width: 10rem;" alt="'.$produit['name'].'">
+        <div class="card-body">
+            <h2 class="card-title">'.$produit['name'].'</h2>
+            <p class="card-text">'.$produit['description'].'</p>
+        </div>
+    </div>';
 }
