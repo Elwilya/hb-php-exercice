@@ -34,4 +34,5 @@
             'image'       => 'casquette.jpg',
         ],
     ];
+    $password = 'toto';
     // Noter que ce fichier ne termine pas par ? > Ce n'est pas nécessaire lorsque le fichier se termine par du php.
