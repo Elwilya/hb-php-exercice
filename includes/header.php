@@ -68,20 +68,24 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
+                <!-- Notez le chemin : même si on est dans un fichier inclu (qui est dans le dossier includes), ce qui compte, c'est le chemin depuis le script qui l'appelle (c'est aussi pour ça que l'on met toutes nos pages à la racine de notre projet) -->
                 <a class="nav-link" href="index.php">Accueil</a>
             </li>
             <li class="nav-item">
+                <!-- Notez le chemin : même si on est dans un fichier inclu (qui est dans le dossier includes), ce qui compte, c'est le chemin depuis le script qui l'appelle (c'est aussi pour ça que l'on met toutes nos pages à la racine de notre projet) -->
                 <a class="nav-link" href="list.php">Liste</a>
             </li>
             <?php if (empty($login)) {//Si l'utilisateur n'est pas connecté, on lui indique la page de connexion
                 ?>
                 <li class="nav-item">
+                    <!-- Notez le chemin : même si on est dans un fichier inclu (qui est dans le dossier includes), ce qui compte, c'est le chemin depuis le script qui l'appelle (c'est aussi pour ça que l'on met toutes nos pages à la racine de notre projet) -->
                     <a class="nav-link" href="login.php">Connexion</a>
                 </li>
                 <?php
             } else { // Sinon, celle pour se déconnecter
                 ?>
                 <li class="nav-item">
+                    <!-- Notez le chemin : même si on est dans un fichier inclu (qui est dans le dossier includes), ce qui compte, c'est le chemin depuis le script qui l'appelle (c'est aussi pour ça que l'on met toutes nos pages à la racine de notre projet) -->
                     <a class="nav-link" href="logout.php">Déconnexion</a>
                 </li>
                 <?php
